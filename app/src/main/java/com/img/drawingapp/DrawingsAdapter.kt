@@ -6,6 +6,7 @@ import android.graphics.BitmapFactory
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -24,6 +25,7 @@ class DrawingsAdapter(
     inner class DrawingViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val thumbnail: ImageView = itemView.findViewById(R.id.thumbnail)
         val name: TextView = itemView.findViewById(R.id.drawingName)
+        val btnOptions: ImageButton = itemView.findViewById(R.id.btnOptions)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DrawingViewHolder {
@@ -44,6 +46,9 @@ class DrawingsAdapter(
         holder.itemView.setOnLongClickListener {
             listener.onLongClick(drawing)
             true
+        }
+        holder.btnOptions.setOnClickListener {
+            listener.onLongClick(drawing)
         }
     }
 
