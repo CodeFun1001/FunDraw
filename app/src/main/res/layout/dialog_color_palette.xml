@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Pick a Color 🎨"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <GridLayout
+        android:id="@+id/colorGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="6"
+        android:layout_marginTop="16dp">
+
+        <View style="@style/ColorDot" android:backgroundTint="#000000"/>
+        <View style="@style/ColorDot" android:backgroundTint="#FFFFFF"/>
+        <View style="@style/ColorDot" android:backgroundTint="#FF0000"/>
+        <View style="@style/ColorDot" android:backgroundTint="#FFA500"/>
+        <View style="@style/ColorDot" android:backgroundTint="#FFFF00"/>
+        <View style="@style/ColorDot" android:backgroundTint="#008000"/>
+
+        <View style="@style/ColorDot" android:backgroundTint="#00FFFF"/>
+        <View style="@style/ColorDot" android:backgroundTint="#0000FF"/>
+        <View style="@style/ColorDot" android:backgroundTint="#800080"/>
+        <View style="@style/ColorDot" android:backgroundTint="#FFC0CB"/>
+        <View style="@style/ColorDot" android:backgroundTint="#A52A2A"/>
+        <View style="@style/ColorDot" android:backgroundTint="#808080"/>
+
+        <!-- Add color button -->
+        <ImageButton
+            android:id="@+id/addColor"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/color_circle"
+            android:src="@drawable/ic_add"
+            android:scaleType="centerInside"/>
+    </GridLayout>
+
+</LinearLayout>

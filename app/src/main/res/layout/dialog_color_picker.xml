@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- Title -->
+        <TextView
+            android:text="Mix Your Color 🎨"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Color Preview -->
+        <View
+            android:id="@+id/colorPreview"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:background="#000000"/>
+
+        <!-- Red -->
+        <TextView
+            android:text="Red"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <SeekBar
+            android:id="@+id/seekRed"
+            android:max="255"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Green -->
+        <TextView
+            android:text="Green"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <SeekBar
+            android:id="@+id/seekGreen"
+            android:max="255"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Blue -->
+        <TextView
+            android:text="Blue"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <SeekBar
+            android:id="@+id/seekBlue"
+            android:max="255"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>

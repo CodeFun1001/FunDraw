@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.DrawingApp"
+        parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+
+        <!-- Optional but nice -->
+        <item name="android:statusBarColor">@color/primary</item>
+    </style>
+
+    <style name="Theme.DrawingApp"
+        parent="Base.Theme.DrawingApp" />
+
+</resources>
